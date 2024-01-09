@@ -47,12 +47,11 @@ pipeline {
         }
         stage('image push') {
             steps {
-              withDockerRegistry(credentialsId: DOCKERHUBCREDENTIAL,url: ") {
+                withDockerRegistry(credentialsId: DOCKERHUBCREDENTIAL, url: '') {
                     sh "docker push ${DOCKERHUB}:${currentBuild.number}"
                     sh "docker push ${DOCKERHUB}:latest"
                 }
             }
-            
             post { 
                 failure {
                     echo 'docker image push fail'
