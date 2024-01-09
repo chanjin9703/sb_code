@@ -4,11 +4,11 @@ pipeline {
         maven 'my_maven'
     }
     environment {
-        GITNAME = 'chanjin9703' #내 깃 계정
+        GITNAME = 'chanjin9703' 
         GITEMAIL = 'ks3ppp@gmail.com'
         GITWEBADD = 'https://github.com/chanjin9703/sb_code.git'
         GITSSHADD = 'git@github.com:chanjin9703/sb_code.git'
-        GITCREDENTIAL = 'git_cre' #젠킨스 credential 에서 생성했던
+        GITCREDENTIAL = 'git_cre'
     }    
     stages {
         stage('Build') {
