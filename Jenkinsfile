@@ -11,7 +11,7 @@ pipeline {
         GITCREDENTIAL = 'git_cre'
         
         DOCKERHUB = 'ks3ppp/spring'
-        DOCKERHUBCREDENTIAL = 'docker_cre'
+        DOCKERHUBCREDENTIAL = 'docke_cre'
     }    
     stages {
         stage('Checkout Github') {
